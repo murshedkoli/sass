@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+img{
+    max-width: 100%;
+}
+%transistion{
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
+%grd-color{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+2,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 2%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 2%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 2%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+}
+
+.navbar{
+    background-color: #F6F9F9;
+    padding: 25px 0;
+   .navbar-nav{
+    .nav-item{
+        .nav-link{
+            color: #2D3950;
+            text-decoration: none;
+            background-color: transparent;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0 20px;
+            @extend %transistion;
+
+
+            &:hover{
+                color: #15A4FA;
+
+            }
+
+        }
+    }
+   }
+}
+
+.section-banner{
+    height: 80vh;
+    background-image: url(../image/Strict.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+
+    .arrow{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .row{
+        min-height: 80vh;
+        text-align: center;
+        justify-content: center;
+        color: #ffffff;
+        h1{
+            font-weight: 600;
+            font-size: 120px;
+            text-transform: uppercase;
+            
+        }
+        span{
+            display: block;
+            background-color: #15A4FA;
+            height: 2px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        .btn-custom{
+            border: 1px solid #15A4FA ;
+            padding: 10px 20px;
+            color: #ffffff;
+            font-size: 20px;
+            @extend %transistion;
+
+            &:hover{
+                background-color: #15A4FA;
+            }
+        }
+    }
+}
+
+.simple{
+    padding: 60px 0;
+    text-align: center;
+    background-color: #F6F9F9;
+    
+    h1{
+        font-weight: 500;
+        font-size: 40px;
+        color: #3b3a3a;
+    }
+    p{
+        font-size: 18px;
+        color: #999999;
+        font-weight: 500;
+    }
+}
+
+.section-services{
+    padding: 100px 0;
+    text-align: center;
+    .box{
+        
+        .icon{
+            height: 100px;
+            width: 100px;
+           @extend %grd-color;
+            line-height: 100px;
+            color: #ffffff;
+            font-size: 50px;
+            text-align: center;
+            margin: auto;
+        }
+        h3{
+            color: #646363;
+            font-weight: 600;
+            font-size: 25px;
+            padding: 20px 0;
+        }
+        p{
+            color: #747272;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.section-pic{
+    padding: 50px 0;
+    background-color: #F6F9F9;
+    text-align: center;
+    h2{
+        color: #646363;
+        font-weight: 400;
+    }
+    p{
+        color: #747272;
+    }
+    .row{
+        padding: 50px 0;
+        .col-lg-4{
+            margin-bottom: 30px;
+        }
+    }
+   
+}
+
+
+.section-form {
+    background-image: url(../image/contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #747272;
+    background-blend-mode: multiply;
+    padding: 100px 0;
+    color: #888a8a;
+    font-weight: 700;
+    form{
+        input{
+            line-height: 20px;
+        }
+    }
+    h2{
+        text-align: center;
+        color: #ffffff;
+    }
+    p{    text-align: center;
+        color: #757777;
+    }
+
+}
+
+.btn-custom2{
+    border: 1px solid #15A4FA ;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-size: 20px;
+    @extend %transistion;
+
+    &:hover{
+        background-color: #15A4FA;
+        color: #ffffff;
+    }
+}
+
+.form-control{
+    background-color: transparent;
+}
+
+.form-group{
+    input{
+        line-height: 200px;
+    }
+}
+
+footer{
+    background-color: #F6F9F9;
+        padding: 20px 0;
+    p{
+        margin-bottom: 0px;
+    }
+
+    ul{
+        li{
+            a{
+                margin-left: 10px;
+                height: 40px;
+                width: 40px;
+                background-color: #15A4FA;
+                display: block;
+                color: #ffffff;
+                text-align: center;
+                line-height: 40px;
+                border: 1px solid #15A4FA;
+                @extend %transistion;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
